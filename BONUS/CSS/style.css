@@ -105,6 +105,7 @@ header {
   border-radius: 25px;
   border: 2px solid grey;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .container button a {
@@ -116,12 +117,22 @@ header {
 .fa-smile-wink,
 .fa-angry {
   font-size: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   display: none;
 }
 
+/* With JS */
+
 .show-face {
   display: block;
+}
+
+.bg-red {
+    background-color: rgb(153, 25, 25);
+}
+
+.bg-yellow {
+    background-color: rgb(255, 238, 0);
 }
 
 

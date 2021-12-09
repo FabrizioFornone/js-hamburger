@@ -18,27 +18,31 @@ hamburgerClose.addEventListener("click", function () {
   hamburgerReveal.classList.remove("active");
 });
 
-// Dichiarazione Variabile clickCounter e della costante buttonBipolar
+// Dichiarazione Variabile clickCounter e delle costanti per la funzione
 
 let clickCounter = 0;
 
 const buttonBipolar = document.getElementById("bipolar-button");
 const smileFace = document.querySelector(".fa-smile-wink");
 const angryFace = document.querySelector(".fa-angry");
+const containerJs = document.querySelector(".container");
 
 // Se il contatore è pari il pulsante si arrabbia sennò è felice
 
 buttonBipolar.addEventListener("click", function () {
-  clickCounter++; // alias di clickCounter += 1;
+  clickCounter++; 
 
-  // se clickCounter è dispari, mostro il box
   if (clickCounter % 2 !== 0) {
     buttonBipolar.innerHTML += `<br/> I hate you!`;
     angryFace.classList.add("show-face");
     smileFace.classList.remove("show-face");
+    containerJs.classList.add("bg-red");
+    containerJs.classList.remove("bg-yellow");
   } else {
     buttonBipolar.innerHTML += `<br/> I love you`;
     angryFace.classList.remove("show-face");
     smileFace.classList.add("show-face");
+    containerJs.classList.add("bg-yellow");
+    containerJs.classList.remove("bg-red");
   }
 });
