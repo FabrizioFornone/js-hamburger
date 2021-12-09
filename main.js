@@ -2,15 +2,18 @@
 
 const hamburgerMenu = document.querySelector(".fa-bars");
 
-const hamburgerReveal = document.querySelector('.hamburger-menu');
+const hamburgerReveal = document.querySelector(".hamburger-menu");
 
-const hamburgerClose = document.querySelector('.close');
+const hamburgerClose = document.querySelector(".close");
 
+//Evento Hamburger Reveal al click
 
 hamburgerMenu.addEventListener("click", function () {
   hamburgerReveal.classList.add("active");
 });
 
+//Evento Hamburger Disappear al click
+
 hamburgerClose.addEventListener("click", function () {
-    hamburgerReveal.classList.remove("active");
-  });
+  hamburgerReveal.classList.remove("active");
+});
