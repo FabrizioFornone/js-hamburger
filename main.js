@@ -1,9 +1,16 @@
-//Dichiarazione delle costanti hamburgerMenu
+//Dichiarazione delle costanti hamburgerMenu e hamburger-menu
 
-const hamburgerMenu = document.querySelector(".hamburger-menu");
+const hamburgerMenu = document.querySelector(".fa-bars");
 
-console.log(hamburgerMenu);
+const hamburgerReveal = document.querySelector('.hamburger-menu');
+
+const hamburgerClose = document.querySelector('.close');
+
 
 hamburgerMenu.addEventListener("click", function () {
-  hamburgerMenu.classList.add("active");
+  hamburgerReveal.classList.add("active");
 });
+
+hamburgerClose.addEventListener("click", function () {
+    hamburgerReveal.classList.remove("active");
+  });
