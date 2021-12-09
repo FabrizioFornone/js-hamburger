@@ -111,6 +111,7 @@ header {
 .container button a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
   font-weight: bold;
 }
 
