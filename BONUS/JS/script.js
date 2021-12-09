@@ -23,6 +23,8 @@ hamburgerClose.addEventListener("click", function () {
 let clickCounter = 0;
 
 const buttonBipolar = document.getElementById("bipolar-button");
+const smileFace = document.querySelector(".fa-smile-wink");
+const angryFace = document.querySelector(".fa-angry");
 
 // Se il contatore è pari il pulsante si arrabbia sennò è felice
 
@@ -32,7 +34,11 @@ buttonBipolar.addEventListener("click", function () {
   // se clickCounter è dispari, mostro il box
   if (clickCounter % 2 !== 0) {
     buttonBipolar.innerHTML += `<br/> I hate you!`;
+    angryFace.classList.add("show-face");
+    smileFace.classList.remove("show-face");
   } else {
     buttonBipolar.innerHTML += `<br/> I love you`;
+    angryFace.classList.remove("show-face");
+    smileFace.classList.add("show-face");
   }
 });

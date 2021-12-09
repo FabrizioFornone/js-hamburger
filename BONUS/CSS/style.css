@@ -72,7 +72,6 @@ header {
   list-style: none;
 }
 
-
 .hamburger-menu ul li a {
   color: white;
   text-decoration: none;
@@ -92,26 +91,37 @@ header {
 /* Main */
 
 .container {
-    height: 100vh;
-    background-color: #e78d5c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-color: #e78d5c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container button {
-    background-color: whitesmoke;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: 2px solid grey;
-    cursor: pointer;
-    
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 
 .container button a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.fa-smile-wink,
+.fa-angry {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+
+.show-face {
+  display: block;
 }
 
 
