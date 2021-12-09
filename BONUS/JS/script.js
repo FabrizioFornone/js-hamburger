@@ -17,3 +17,22 @@ hamburgerMenu.addEventListener("click", function () {
 hamburgerClose.addEventListener("click", function () {
   hamburgerReveal.classList.remove("active");
 });
+
+// Dichiarazione Variabile clickCounter e della costante buttonBipolar
+
+let clickCounter = 0;
+
+const buttonBipolar = document.getElementById("bipolar-button");
+
+// Se il contatore è pari il pulsante si arrabbia sennò è felice
+
+buttonBipolar.addEventListener("click", function () {
+  clickCounter++; // alias di clickCounter += 1;
+
+  // se clickCounter è dispari, mostro il box
+  if (clickCounter % 2 !== 0) {
+    buttonBipolar.innerHTML += `<br/> I hate you!`;
+  } else {
+    buttonBipolar.innerHTML += `<br/> I love you`;
+  }
+});
