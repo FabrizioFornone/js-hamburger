@@ -1,11 +1,9 @@
-//Dichiarazione delle costanti hamburgerMenu e hamburgerReveal
+//Dichiarazione delle costanti hamburgerMenu
 
-const hamburgerMenu = document.getElementsByClassName("hamburger-menu");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 
 console.log(hamburgerMenu);
 
-
-hamburgerMenu.addEventListener('click', function () {
+hamburgerMenu.addEventListener("click", function () {
   hamburgerMenu.classList.add("active");
-})
-
+});
