@@ -1,10 +1,10 @@
 //Dichiarazione delle costanti hamburgerMenu e hamburger-menu
 
-const hamburgerMenu = document.querySelector(".fa-bars");
+const hamburgerMenu = document.querySelector(".header-right > a");
 
 const hamburgerReveal = document.querySelector(".hamburger-menu");
 
-const hamburgerClose = document.querySelector(".close");
+const hamburgerClose = document.querySelector(".hamburger-menu .close");
 
 //Evento Hamburger Reveal al click
 
